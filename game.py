@@ -17,25 +17,25 @@ while stop==False:
   else:
     "Please enter a valid option"
     continue
-if user_choice==comp_choice:
-  print("tie")
-elif user_choice=="rock" and comp_choice=="scissors":
-  print("you win")
-  user_wins += 1
-elif user_choice=="paper" and comp_choice=="rock":
-  print("you win")
-  user_wins += 1
-elif user_choice=="scissors" and comp_choice=="paper":
-  print("you win")
-  user_wins += 1
-elif user_choice=="rock" and comp_choice=="paper":
-  print("I win")
-  computer_wins += 1
-elif user_choice=="paper" and comp_choice=="scissors":
-  print("I win")
-  computer_wins += 1
-elif user_choice=="scissors" and comp_choice=="rock":
-  print("I win")
-  computer_wins += 1
+  if user_choice==comp_choice:
+    print("tie")
+  elif user_choice=="rock" and comp_choice=="scissors":
+    print("you win")
+    user_wins += 1
+  elif user_choice=="paper" and comp_choice=="rock":
+    print("you win")
+    user_wins += 1
+  elif user_choice=="scissors" and comp_choice=="paper":
+    print("you win")
+    user_wins += 1
+  elif user_choice=="rock" and comp_choice=="paper":
+    print("I win")
+    computer_wins += 1
+  elif user_choice=="paper" and comp_choice=="scissors":
+    print("I win")
+    computer_wins += 1
+  elif user_choice=="scissors" and comp_choice=="rock":
+    print("I win")
+    computer_wins += 1
 print("number of computer wins:", computer_wins)
 print("number of your wins:", user_wins)
