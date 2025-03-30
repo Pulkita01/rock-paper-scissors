@@ -8,10 +8,13 @@ while stop==False:
   choice_number = random.randint(0,2)
   if choice_number==0:
       comp_choice="rock"
+      print("my pick",comp_choice)
   elif choice_number==1:
       comp_choice="paper"
+      print("my pick",comp_choice)
   else:
       comp_choice="scissors"
+      print("my pick",comp_choice)
   if user_choice=="rock" and comp_choice=="scissors":
     print("you win")
     user_wins += 1
@@ -33,6 +36,9 @@ while stop==False:
   elif user_choice==comp_choice:
       print("tie")
   if user_choice=="quit":
-    stop=True    
+    stop=True
+  if user_choice not in ["scissors", "paper", "rock", "quit"]:
+    print("invalid input")
+    continue
 print("number of computer wins:", computer_wins)
 print("number of your wins:", user_wins)
